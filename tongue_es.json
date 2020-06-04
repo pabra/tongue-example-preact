@@ -1,1 +1,6 @@
-{ "hello world": "Hola Mundo" }
+{
+  "hello world": "Hola Mundo",
+  "describe-SelectLanguage": "Este componente consume el idioma configurado actualmente. Por lo tanto, se volverá a representar si el idioma actual cambió.",
+  "describe-SetLanguage": "Este componente no consume el idioma configurado actualmente. Por lo tanto, no se volverá a reproducir si el idioma actual cambió.",
+  "describe-App": "El componente de la aplicación no consume el idioma configurado actualmente. Por lo tanto, no se volverá a reproducir si el idioma actual cambió."
+}

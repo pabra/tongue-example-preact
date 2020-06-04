@@ -1,5 +1,3 @@
-import { h } from 'preact';
-import makeStore from 'react-hooksack';
 import { Languages } from './translate';
 
 const uniLet = {
@@ -19,42 +17,5 @@ export const flags: Record<Languages, string> = {
   fr: uniLet.f + uniLet.r,
 } as const;
 
-export const isInArray = <T,>(arr: Readonly<T[]>, item: any): item is T =>
+export const isInArray = <T,>(arr: Readonly<T[]>, item: T | any): item is T =>
   arr.indexOf(item) !== -1;
-
-type Log = Record<string, number>;
-
-const reducer = (state: Log, action: string) => {
-  const count = (state[action] || 0) + 1;
-  return { ...state, [action]: count };
-};
-
-export const useLogStore = makeStore<Log, typeof reducer>({}, reducer);
-
-export const LogTable = () => {
-  const log = useLogStore('justState');
-
-  return (
-    <table>
-      <thead>
-        <tr>
-          <th>Component</th>
-          <th>render count</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Object.keys(log)
-          .sort()
-          .map(name => {
-            const count = log[name];
-            return (
-              <tr key={name}>
-                <td>{name}</td>
-                <td style={{ textAlign: 'right' }}>{count}</td>
-              </tr>
-            );
-          })}
-      </tbody>
-    </table>
-  );
-};

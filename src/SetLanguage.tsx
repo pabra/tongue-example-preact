@@ -1,22 +1,34 @@
-import { h } from 'preact';
+import { FunctionalComponent, h } from 'preact';
 import { useEffect } from 'preact/hooks';
-import styles from './index.module.css';
-import { languages, useSetLanguage } from './translate';
-import { flags, useLogStore } from './utils';
+import { useLogStore } from './LogTable';
+import './styles.scss';
+import { languages, Translate, useSetLanguage } from './translate';
+import { flags } from './utils';
 
-const SetLanguage = () => {
+const SetLanguage: FunctionalComponent = () => {
+  const componentName = SetLanguage.name;
   const setLanguage = useSetLanguage();
   Object.keys(flags).forEach(k => k);
 
-  useEffect(() => useLogStore('justSetter')(SetLanguage.name));
+  // start render logging
+  const logRender = useLogStore('justSetter');
+  useEffect(() => logRender(componentName));
+  // end render logging
 
   return (
-    <div className={styles.root}>
-      <p>will not re-render</p>
-      {languages.map(lang => (
-        <button onClick={() => setLanguage(lang)}>{flags[lang]}</button>
-      ))}
-    </div>
+    <fieldset>
+      <legend>{componentName}</legend>
+      <p className="small">
+        <Translate entry="describe-SetLanguage" />
+      </p>
+      <div>
+        {languages.map(lang => (
+          <button key={lang} type="button" onClick={() => setLanguage(lang)}>
+            {flags[lang]}
+          </button>
+        ))}
+      </div>
+    </fieldset>
   );
 };
 

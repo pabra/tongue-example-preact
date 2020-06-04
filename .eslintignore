@@ -6,4 +6,5 @@ lib
 # don't lint nyc coverage output
 coverage
 #others
+.eslintrc.js
 jest.config.js

@@ -1,1 +1,6 @@
-{ "hello world": "Hello World" }
+{
+  "hello world": "Hello World",
+  "describe-SelectLanguage": "This component does consume the currently set language. Thus it will be re-rendered if the current language changed.",
+  "describe-SetLanguage": "This component does not consume the currently set language. Thus it will not be re-rendered if the current language changed.",
+  "describe-App": "The App component does not consume the currently set language. Thus it will not be re-rendered if the current language changed."
+}

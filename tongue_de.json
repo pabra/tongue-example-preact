@@ -1,1 +1,6 @@
-{ "hello world": "Hallo Welt" }
+{
+  "hello world": "Hallo Welt",
+  "describe-SelectLanguage": "Diese Komponente verwendet die aktuell eingestellte Sprache. Daher wird sie neu gerendert, wenn die aktuelle Sprache geändert wird.",
+  "describe-SetLanguage": "Diese Komponente verwendet nicht die aktuell eingestellte Sprache. Daher wird sie nicht erneut gerendert, wenn die aktuelle Sprache geändert wird.",
+  "describe-App": "Die App-Komponente verwendet nicht die aktuell eingestellte Sprache. Daher wird sie nicht erneut gerendert, wenn die aktuelle Sprache geändert wird."
+}

@@ -1,4 +1,8 @@
 {
+  "english": "anglais",
+  "german": "allemand",
+  "spanish": "espagnol",
+  "french": "français",
   "hello world": "Bonjour le monde",
   "describe-SelectLanguage": "Ce composant consomme la langue actuellement définie. Ainsi, il sera restitué si la langue actuelle a changé.",
   "describe-SetLanguage": "Ce composant ne consomme pas la langue actuellement définie. Ainsi, il ne sera pas restitué si la langue actuelle a changé.",

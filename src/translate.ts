@@ -6,13 +6,23 @@ import es from '../tongue_es.json';
 import fr from '../tongue_fr.json';
 
 const dicts = { en, de, es, fr } as const;
-const { Translate, useLanguage, useSetLanguage, useTranslate } = initTongue(
-  entries,
-  dicts,
-);
+const {
+  Translate,
+  translate,
+  useLanguage,
+  useSetLanguage,
+  useTranslate,
+} = initTongue(entries, dicts);
 
 type Languages = keyof typeof dicts;
 const languages = [...(Object.keys(dicts) as Languages[])] as const;
 
-export { languages, Translate, useLanguage, useSetLanguage, useTranslate };
 export type { Languages };
+export {
+  languages,
+  Translate,
+  translate,
+  useLanguage,
+  useSetLanguage,
+  useTranslate,
+};

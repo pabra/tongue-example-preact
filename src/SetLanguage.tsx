@@ -2,8 +2,15 @@ import { FunctionalComponent, h } from 'preact';
 import { useEffect } from 'preact/hooks';
 import { useLogStore } from './LogTable';
 import './styles.scss';
-import { languages, Translate, useSetLanguage } from './translate';
+import { languages, translate, Translate, useSetLanguage } from './translate';
 import { flags } from './utils';
+
+const titles = {
+  en: translate('en', 'english'),
+  de: translate('de', 'german'),
+  es: translate('es', 'spanish'),
+  fr: translate('fr', 'french'),
+} as const;
 
 const SetLanguage: FunctionalComponent = () => {
   const componentName = SetLanguage.name;
@@ -23,7 +30,12 @@ const SetLanguage: FunctionalComponent = () => {
       </p>
       <div>
         {languages.map(lang => (
-          <button key={lang} type="button" onClick={() => setLanguage(lang)}>
+          <button
+            key={lang}
+            type="button"
+            title={titles[lang]}
+            onClick={() => setLanguage(lang)}
+          >
             {flags[lang]}
           </button>
         ))}

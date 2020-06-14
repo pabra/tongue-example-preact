@@ -1,10 +1,10 @@
 {
-  "english": "anglais",
-  "german": "allemand",
-  "spanish": "espagnol",
-  "french": "français",
-  "hello world": "Bonjour le monde",
+  "describe-App": "Le composant App ne consomme pas la langue actuellement définie. Ainsi, il ne sera pas restitué si la langue actuelle a changé.",
   "describe-SelectLanguage": "Ce composant consomme la langue actuellement définie. Ainsi, il sera restitué si la langue actuelle a changé.",
   "describe-SetLanguage": "Ce composant ne consomme pas la langue actuellement définie. Ainsi, il ne sera pas restitué si la langue actuelle a changé.",
-  "describe-App": "Le composant App ne consomme pas la langue actuellement définie. Ainsi, il ne sera pas restitué si la langue actuelle a changé."
+  "hello world": "Bonjour le monde",
+  "lang-de": "allemand",
+  "lang-en": "anglais",
+  "lang-es": "espagnol",
+  "lang-fr": "français"
 }

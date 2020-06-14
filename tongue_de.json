@@ -1,10 +1,10 @@
 {
-  "english": "englisch",
-  "german": "deutsch",
-  "spanish": "spanisch",
-  "french": "französisch",
-  "hello world": "Hallo Welt",
+  "describe-App": "Die App-Komponente verwendet nicht die aktuell eingestellte Sprache. Daher wird sie nicht erneut gerendert, wenn die aktuelle Sprache geändert wird.",
   "describe-SelectLanguage": "Diese Komponente verwendet die aktuell eingestellte Sprache. Daher wird sie neu gerendert, wenn die aktuelle Sprache geändert wird.",
   "describe-SetLanguage": "Diese Komponente verwendet nicht die aktuell eingestellte Sprache. Daher wird sie nicht erneut gerendert, wenn die aktuelle Sprache geändert wird.",
-  "describe-App": "Die App-Komponente verwendet nicht die aktuell eingestellte Sprache. Daher wird sie nicht erneut gerendert, wenn die aktuelle Sprache geändert wird."
+  "hello world": "Hallo Welt",
+  "lang-de": "deutsch",
+  "lang-en": "englisch",
+  "lang-es": "spanisch",
+  "lang-fr": "französisch"
 }

@@ -19,10 +19,10 @@ const SelectLanguage: FunctionalComponent = () => {
     setLanguage(isInArray(languages, lang) ? lang : 'en');
   };
   const titles = {
-    en: `${t('english')} (${translate('en', 'english')})`,
-    de: `${t('german')} (${translate('de', 'german')})`,
-    es: `${t('spanish')} (${translate('es', 'spanish')})`,
-    fr: `${t('french')} (${translate('fr', 'french')})`,
+    en: `${t('lang-en')} (${translate('en', 'lang-en')})`,
+    de: `${t('lang-de')} (${translate('de', 'lang-de')})`,
+    es: `${t('lang-es')} (${translate('es', 'lang-es')})`,
+    fr: `${t('lang-fr')} (${translate('fr', 'lang-fr')})`,
   } as const;
 
   // start render logging

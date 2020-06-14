@@ -1,10 +1,10 @@
 {
-  "english": {},
-  "german": {},
-  "spanish": {},
-  "french": {},
-  "hello world": {},
+  "describe-App": {},
   "describe-SelectLanguage": {},
   "describe-SetLanguage": {},
-  "describe-App": {}
+  "hello world": {},
+  "lang-de": {},
+  "lang-en": {},
+  "lang-es": {},
+  "lang-fr": {}
 }
